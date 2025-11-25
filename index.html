@@ -5,83 +5,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imobiliária Milênio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-info">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
     <div class="container">
-      <a class="navbar-brand" href="#">Imobiliária Milênio</a>
+      <a class="navbar-brand fw-bold" href="#">Imobiliária Milênio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#">Encontrar um imóvel</a>
           </li>
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               Para proprietários
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Saber mais sobre anunciar</a></li>
+              <li><a class="dropdown-item" href="#">Como anunciar</a></li>
               <li><a class="dropdown-item" href="#">Anunciar com um especialista</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Anuncie agora!</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item fw-bold" href="#">Anuncie agora!</a></li>
             </ul>
           </li>
+
         </ul>
+
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <input class="form-control me-2" type="search" placeholder="Buscar imóvel..." aria-label="Search">
+          <button class="btn btn-dark" type="submit">Buscar</button>
         </form>
+
       </div>
     </div>
   </nav>
 
+  <!-- CAROUSEL -->
   <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
+
       <div class="carousel-item active">
-        <img src="https://vgprojetos.com/wp-content/uploads/2023/02/P13-IMG-1.jpg" class="d-block w-100" alt="...">
+        <img src="https://vgprojetos.com/wp-content/uploads/2023/02/P13-IMG-1.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2 rounded">
+          <h5>Imóveis de Alto Padrão</h5>
+          <p>Encontre opções exclusivas nas melhores regiões.</p>
+        </div>
       </div>
+
       <div class="carousel-item">
-        <img src="https://planner5d.com/blog/content/images/2022/12/3197765d4430d0a57076bbcabc28904d_10335872.jpg"
-          class="d-block w-100" alt="...">
+        <img src="https://planner5d.com/blog/content/images/2022/12/3197765d4430d0a57076bbcabc28904d_10335872.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2 rounded">
+          <h5>Conforto e Modernidade</h5>
+          <p>Projetos modernos para seu estilo de vida.</p>
+        </div>
       </div>
+
       <div class="carousel-item">
-        <img src="https://arkpad.com.br/wp-content/uploads/2024/11/image.png" class="d-block w-100" alt="...">
+        <img src="https://arkpad.com.br/wp-content/uploads/2024/11/image.png" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2 rounded">
+          <h5>Ambientes Planejados</h5>
+          <p>Espaços pensados para viver bem.</p>
+        </div>
       </div>
+
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
     </button>
+
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Próximo</span>
     </button>
   </div>
 
-  <div class="container">
-    <br>
-    <h3>Nossos Serviços</h3>
-    
+  <!-- SOBRE A IMOBILIÁRIA -->
+  <div class="container my-5">
+    <h3 class="text-center mb-4">Sobre a Imobiliária Milênio</h3>
+
+    <p class="text-center">
+      Há mais de <strong>20 anos</strong> no mercado, a Imobiliária Milênio atua com excelência em vendas, locação e administração de imóveis.  
+      Nosso compromisso é oferecer confiança, transparência e o melhor atendimento para ajudar você a encontrar o imóvel ideal.
+    </p>
+
+    <p class="text-center">
+      Trabalhamos com casas, apartamentos, salas comerciais, lançamentos e imóveis de alto padrão,
+      sempre com suporte especializado em todas as etapas do processo.
+    </p>
   </div>
 
+  <!-- SERVIÇOS -->
+  <div class="container mb-5">
+    <h3 class="mb-4">Nossos Serviços</h3>
 
+    <div class="row g-3">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+      <div class="col-sm-4">
+        <div class="card text-bg-success">
+          <div class="card-body">
+            <h5 class="card-title">Anúncios de Imóveis</h5>
+            <p class="card-text">Divulgue seu imóvel com máxima visibilidade e qualidade profissional.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card text-bg-info">
+          <div class="card-body">
+            <h5 class="card-title">Busca Personalizada</h5>
+            <p class="card-text">Encontre imóveis de acordo com seu perfil e necessidades.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card text-bg-light border">
+          <div class="card-body">
+            <h5 class="card-title">Imóveis Novos</h5>
+            <p class="card-text">Conheça lançamentos e unidades recém-construídas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Sobre -->
+        <div class="col-md-4">
+          <h5>Imobiliária Milênio</h5>
+          <p>
+            Especialistas em vendas, locações e administração de imóveis.  
+            Tradição e confiança no mercado imobiliário.
+          </p>
+        </div>
+
+        <!-- Contato -->
+        <div class="col-md-4">
+          <h5>Contato</h5>
+          <p>📍 Rua Central, 123 – Centro</p>
+          <p>📞 (44) 99999-9999</p>
+          <p>📧 contato@milenioimoveis.com</p>
+        </div>
+
+        <!-- Redes sociais -->
+        <div class="col-md-4">
+          <h5>Siga-nos</h5>
+          <p>Instagram | Facebook | WhatsApp</p>
+        </div>
+
+      </div>
+
+      <hr class="border-light">
+
+      <p class="text-center m-0">
+        © 2025 Imobiliária Milênio – Todos os direitos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
